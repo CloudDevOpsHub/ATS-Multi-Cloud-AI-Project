@@ -6,7 +6,7 @@ import base64
 import google.generativeai as genai
 
 genai.configure(api_key=st.secrets.GOOGLE_API_KEY)
-model = genai.GenerativeModel('gemini-2.0-flash')
+model = genai.GenerativeModel('gemini-3.5-flash')
 # Define cached functions
 @st.cache_data()
 def get_gemini_response(input, pdf_content, prompt):
